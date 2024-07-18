@@ -1,14 +1,14 @@
-#N canvas 2286 440 696 538 12;
+#N canvas 2287 330 696 538 12;
 #X obj 21 207 *~;
-#X obj 105 118 vsl 20 200 0.01 1 1 1 \$0-fader-s \$0-fader-r Level 0 -9 0 12 #fcfcfc #000000 #000000 8986 1;
-#X obj 191 120 hsl 170 20 0 127 0 1 \$0-frequency-s \$0-frequency-r Frequency -2 -10 0 12 #fcfcfc #000000 #000000 4700 1;
+#X obj 105 118 vsl 20 200 0 1 0 1 \$0-fader-s \$0-fader-r Level 0 -9 0 12 #fcfcfc #000000 #000000 10348 1;
+#X obj 191 120 hsl 170 20 0 127 0 1 \$0-frequency-s \$0-frequency-r Frequency -2 -10 0 12 #fcfcfc #000000 #000000 4600 1;
 #X obj 198 72 mtof;
 #X floatatom 368 121 5 0 0 0 - - - 0;
 #X obj 129 116 vu-meter;
 #X obj 17 16 inlet~;
 #X obj 16 48 lp2~, f 9;
 #X obj 21 241 outlet~;
-#X obj 191 158 hsl 170 20 0 10 0 1 \$0-q-s \$0-q-r Q -2 -10 0 12 #fcfcfc #000000 #000000 2298 1;
+#X obj 191 158 hsl 170 20 0 10 0 1 \$0-q-s \$0-q-r Q -2 -10 0 12 #fcfcfc #000000 #000000 2200 1;
 #N canvas 944 459 645 393 numbercruncher 0;
 #X obj 87 10 inlet;
 #X obj 269 255 loadbang;
