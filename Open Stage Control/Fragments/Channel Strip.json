@@ -120,7 +120,7 @@
         "doubleTap": true,
         "range": {
           "min": -100,
-          "max": 10
+          "max": 12
         },
         "logScale": true,
         "sensitivity": 1,
