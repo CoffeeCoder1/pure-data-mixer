@@ -24,7 +24,7 @@
 #X obj 15 744 catch~ bus-l;
 #X obj 77 769 catch~ bus-r;
 #X obj 162 497 catch~ bus-1;
-#N canvas 506 444 450 262 osc 0;
+#N canvas 507 472 450 262 osc 0;
 #X msg 300 34 disconnect;
 #X obj 130 9 loadbang;
 #X msg 130 34 connect localhost 8000;
@@ -51,9 +51,9 @@
 #X obj 607 738 catch~ bus-2-l;
 #X obj 674 765 catch~ bus-2-r;
 #X obj 811 98 declare -lib zexy;
-#X obj 13 44 abstractions/channel-strip-stereo fader -23.07 mute 0 aux1 0.108435 aux1-mute 0 aux2 2.98023e-06 aux2-mute 0 channel-num 1;
+#X obj 13 44 abstractions/channel-strip-stereo fader -22.3317 mute 0 aux1 0.108435 aux1-mute 0 aux2 2.98023e-06 aux2-mute 0 channel-num 1;
 #X obj 132 44 abstractions/channel-strip-stereo fader -6.57286 mute 1 aux1 0.0250882 aux1-mute 1 aux2 2.98023e-06 aux2-mute 0 channel-num 2;
-#X obj 251 44 abstractions/channel-strip-stereo fader -46.37 mute 0 aux1 -3.74999 aux1-mute 0 aux2 2.98023e-06 aux2-mute 1 channel-num 3;
+#X obj 251 44 abstractions/channel-strip-stereo fader -51.0352 mute 0 aux1 -3.74999 aux1-mute 0 aux2 2.98023e-06 aux2-mute 1 channel-num 3;
 #X obj 366 44 abstractions/channel-strip-stereo fader -25.6001 mute 0 aux1 2.98023e-06 aux1-mute 0 aux2 2.98023e-06 aux2-mute 0 channel-num 4;
 #X obj 485 44 abstractions/channel-strip-stereo fader -60.2 mute 1 aux1 0.00099957 aux1-mute 1 aux2 0.0100017 aux2-mute 1 channel-num 5;
 #X obj 602 44 abstractions/channel-strip-stereo fader -16.7035 mute 0 aux1 0.101753 aux1-mute 0 aux2 0.0100017 aux2-mute 0 channel-num 6;
