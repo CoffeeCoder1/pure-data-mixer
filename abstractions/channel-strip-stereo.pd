@@ -1,5 +1,5 @@
-#N canvas 2137 229 1190 468 12;
-#X obj 103 154 vsl 20 200 -100 10 0 1 \$0-fader-s \$0-fader-r empty 0 -9 0 12 #fcfcfc #000000 #000000 18091 1;
+#N canvas 1752 257 1190 468 12;
+#X obj 103 154 vsl 20 200 -100 12 0 1 \$0-fader-s \$0-fader-r empty 0 -9 0 12 #fcfcfc #000000 #000000 17679 1;
 #X obj 334 29 inlet~;
 #X obj 103 128 tgl 20 1 \$0-mute-s \$0-mute-r empty 0 -10 0 12 #ffffff #ff0400 #000000 0 1;
 #X obj 156 128 else/knob 20 -100 10 0 1 \$0-aux1-s \$0-aux1-r #dfdfdf #7c7c7c black 1 0 0 0 1 320 0 0 0.001;
