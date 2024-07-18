@@ -248,7 +248,7 @@
 #X obj 43 97 knob 50 0 20 0 0 \$0-gain-s \$0-gain-r #dfdfdf #7c7c7c black 1 0 0 0 1 320 0 0 0;
 #X text 43 77 Gain;
 #X text 488 299 Aux Send 1;
-#N canvas 695 375 839 483 sof-fader 0;
+#N canvas 697 431 839 485 sof-fader 1;
 #X obj 100 102 vsl 20 200 -100 12 0 0 empty empty empty 0 -9 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 123 26 inlet;
 #X obj 357 455 outlet;
@@ -296,6 +296,9 @@
 #X obj 439 327 t b;
 #X obj 587 330 t b;
 #X obj 748 327 t b;
+#X obj 409 455 s \$0-aux1-r;
+#X obj 572 455 s \$0-aux2-r;
+#X obj 732 455 s \$0-aux3-r;
 #X connect 0 0 7 0;
 #X connect 0 0 8 0;
 #X connect 0 0 26 0;
@@ -308,6 +311,7 @@
 #X connect 7 0 43 0;
 #X connect 8 0 10 0;
 #X connect 8 0 2 0;
+#X connect 8 0 47 0;
 #X connect 9 0 14 0;
 #X connect 10 0 15 0;
 #X connect 11 0 0 0;
@@ -337,11 +341,13 @@
 #X connect 25 0 26 1;
 #X connect 26 0 24 0;
 #X connect 26 0 36 0;
+#X connect 26 0 48 0;
 #X connect 27 0 0 0;
 #X connect 28 0 27 0;
 #X connect 30 0 31 1;
 #X connect 31 0 29 0;
 #X connect 31 0 37 0;
+#X connect 31 0 49 0;
 #X connect 32 0 0 0;
 #X connect 33 0 32 0;
 #X connect 34 0 25 0;
