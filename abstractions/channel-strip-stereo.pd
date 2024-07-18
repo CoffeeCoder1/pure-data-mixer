@@ -1,4 +1,4 @@
-#N canvas 206 333 1173 468 12;
+#N canvas 503 491 1173 462 12;
 #X obj 300 35 inlet~;
 #X obj 103 128 tgl 20 1 \$0-mute-s \$0-mute-r empty 0 -10 0 12 #ffffff #ff0400 #000000 1 1;
 #X obj 156 128 else/knob 20 -100 10 0 1 \$0-aux1-s \$0-aux1-r #dfdfdf #7c7c7c black 1 0 0 0 1 320 0 0 0.001;
@@ -389,7 +389,9 @@
 #X connect 2 0 36 2;
 #X connect 2 0 37 2;
 #X connect 4 0 3 0;
+#X connect 4 0 47 0;
 #X connect 6 0 5 0;
+#X connect 6 0 47 1;
 #X connect 7 0 35 0;
 #X connect 8 0 52 0;
 #X connect 11 0 19 0;
