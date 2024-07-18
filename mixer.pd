@@ -24,7 +24,7 @@
 #X obj 15 744 catch~ bus-l;
 #X obj 77 769 catch~ bus-r;
 #X obj 162 497 catch~ bus-1;
-#N canvas 526 340 627 289 osc 1;
+#N canvas 526 340 627 289 osc 0;
 #X msg 300 34 disconnect;
 #X obj 130 9 loadbang;
 #X msg 130 34 connect localhost 8000;
@@ -65,12 +65,12 @@
 #X obj 366 44 abstractions/channel-strip-stereo fader -25.6001 mute 0 aux1 2.98023e-06 aux1-mute 0 aux2 2.98023e-06 aux2-mute 0 channel-num 4 master-mute 1 gain 0;
 #X obj 485 44 abstractions/channel-strip-stereo fader -60.2 mute 1 aux1 0.00099957 aux1-mute 1 aux2 0.0100017 aux2-mute 1 channel-num 5 master-mute 1 gain 0;
 #X obj 602 44 abstractions/channel-strip-stereo fader -16.7035 mute 0 aux1 0.101753 aux1-mute 0 aux2 0.0100017 aux2-mute 0 channel-num 6 master-mute 1 gain 0;
-#X obj 161 523 abstractions/crossover fader 0.55 frequency 34.568 q 1.30178;
+#X obj 161 523 abstractions/crossover fader 0.48 frequency 34.568 q 1.30178;
 #X obj 40 533 abstractions/vu-meter;
 #X obj 97 532 abstractions/vu-meter;
 #X obj 795 625 abstractions/vu-meter;
 #X obj 851 625 abstractions/vu-meter;
-#X obj 724 43 vradio 20 1 1 4 sof-select-s sof-select-r SOF 0 -10 0 12 #fcfcfc #000000 #000000 0;
+#X obj 724 43 vradio 20 1 1 4 sof-select-s sof-select-r SOF 0 -10 0 12 #fcfcfc #000000 #000000 2;
 #X text 747 42 Gain;
 #X text 748 63 Main;
 #X text 748 83 Sub;
