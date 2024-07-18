@@ -1,4 +1,4 @@
-#N canvas 389 230 1425 818 10;
+#N canvas 414 172 1425 818 10;
 #X obj 101 103 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 123 26 inlet;
 #X obj 254 456 outlet;
@@ -12,7 +12,7 @@
 #X obj 301 364 v \$0-2stb;
 #X msg 301 406 set \$1;
 #X msg 186 415 set \$1;
-#X obj 188 164 t f f;
+#X obj 190 147 t f f;
 #X floatatom 186 391 5 0 0 0 - - - 0;
 #X floatatom 301 386 5 0 0 0 - - - 0;
 #X obj 123 48 route 0 1;
@@ -21,8 +21,8 @@
 #X obj 21 63 r sof-select-s;
 #X floatatom 13 92 5 0 0 0 - - - 0;
 #X obj 295 266 == 1;
-#X obj 151 119 route 0 1 2 3;
-#X obj 186 205 sel 0 1 2 3;
+#X obj 149 77 route 0 1 2 3;
+#X obj 190 180 sel 0 1 2 3;
 #X obj 370 456 outlet;
 #X obj 411 301 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 369 329 spigot 0;
