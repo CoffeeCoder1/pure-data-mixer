@@ -1,5 +1,5 @@
-#N canvas 526 580 1173 468 12;
-#X obj 103 154 vsl 20 200 -100 12 0 1 \$0-fader-s \$0-fader-r empty 0 -9 0 12 #fcfcfc #000000 #000000 17768 1;
+#N canvas 2010 303 1173 468 12;
+#X obj 103 154 vsl 20 200 -100 12 0 1 \$0-fader-s \$0-fader-r empty 0 -9 0 12 #fcfcfc #000000 #000000 0 1;
 #X obj 300 35 inlet~;
 #X obj 103 128 tgl 20 1 \$0-mute-s \$0-mute-r empty 0 -10 0 12 #ffffff #ff0400 #000000 0 1;
 #X obj 156 128 else/knob 20 -100 10 0 1 \$0-aux1-s \$0-aux1-r #dfdfdf #7c7c7c black 1 0 0 0 1 320 0 0 0.001;
@@ -12,7 +12,7 @@
 #X text 488 299 Aux Send 1;
 #X obj 61 420 outlet;
 #X text 305 323 Main Out;
-#N canvas 167 509 1189 535 numbercruncher 1;
+#N canvas 313 170 1189 535 numbercruncher 0;
 #X obj 87 10 inlet;
 #X obj 1047 196 loadbang;
 #X obj 43 501 outlet;
@@ -171,7 +171,7 @@
 #X floatatom 4 30 5 0 0 0 - - - 0;
 #X obj 4 5 r \$0-channel-num-r;
 #X obj 4 54 s \$0-channel-num-s;
-#N canvas 2130 532 957 298 osc 0;
+#N canvas 456 362 1202 298 osc 0;
 #X obj 386 32 route /strip/fader;
 #X obj 386 6 receive osc-receive;
 #X obj 386 57 route;
@@ -199,10 +199,17 @@
 #X obj 193 130 pack f f;
 #X msg 4 157 send /strip/meter-l \$2 \$1;
 #X msg 193 157 send /strip/meter-r \$2 \$1;
+#X obj 960 57 route;
+#X obj 959 212 pack f f;
+#X msg 959 239 send /strip/gain \$2 \$1;
+#X obj 959 184 r \$0-gain-s;
+#X obj 960 32 route /strip/gain;
+#X obj 960 82 s \$0-gain-r;
 #X connect 0 0 2 0;
 #X connect 1 0 0 0;
 #X connect 1 0 12 0;
 #X connect 1 0 17 0;
+#X connect 1 0 31 0;
 #X connect 2 0 4 0;
 #X connect 3 0 2 1;
 #X connect 3 0 6 1;
@@ -212,6 +219,8 @@
 #X connect 3 0 16 1;
 #X connect 3 0 23 1;
 #X connect 3 0 24 1;
+#X connect 3 0 27 1;
+#X connect 3 0 28 1;
 #X connect 6 0 7 0;
 #X connect 7 0 5 0;
 #X connect 8 0 6 0;
@@ -231,8 +240,13 @@
 #X connect 24 0 26 0;
 #X connect 25 0 5 0;
 #X connect 26 0 5 0;
+#X connect 27 0 32 0;
+#X connect 28 0 29 0;
+#X connect 29 0 5 0;
+#X connect 30 0 28 0;
+#X connect 31 0 27 0;
 #X restore 166 18 pd osc;
-#X obj 43 97 knob 50 -100 12 0 0 \$0-gain-s \$0-gain-r #dfdfdf #7c7c7c black 1 0 0 0 1 320 0 0 0;
+#X obj 43 97 knob 50 0 20 0 0 \$0-gain-s \$0-gain-r #dfdfdf #7c7c7c black 1 0 0 0 1 320 0 0 0;
 #X text 43 77 Gain;
 #X connect 0 0 25 0;
 #X connect 1 0 38 0;
