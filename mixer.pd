@@ -70,7 +70,7 @@
 #X obj 97 532 abstractions/vu-meter;
 #X obj 795 625 abstractions/vu-meter;
 #X obj 851 625 abstractions/vu-meter;
-#X obj 724 43 vradio 20 1 1 4 sof-select-s sof-select-r SOF 0 -10 0 12 #fcfcfc #000000 #000000 0;
+#X obj 724 43 vradio 20 1 1 4 sof-select-s sof-select-r SOF 0 -10 0 12 #fcfcfc #000000 #000000 2;
 #X text 747 42 Gain;
 #X text 748 63 Main;
 #X text 748 83 Sub;
