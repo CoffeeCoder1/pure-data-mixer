@@ -245,7 +245,7 @@
 #X obj 43 97 knob 50 0 20 0 0 \$0-gain-s \$0-gain-r #dfdfdf #7c7c7c black 1 0 0 0 1 320 0 0 0;
 #X text 43 77 Gain;
 #X text 488 299 Aux Send 1;
-#N canvas 367 304 1526 733 sof-fader 1;
+#N canvas 121 207 1526 733 sof-fader 1;
 #X obj 100 102 vsl 20 200 -100 12 0 0 empty empty empty 0 -9 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 123 26 inlet;
 #X obj 109 455 outlet;
@@ -292,7 +292,9 @@
 #X obj 564 330 sof-logic;
 #X obj 399 327 sof-logic;
 #X obj 212 327 sof-logic;
-#X obj 437 384 s \$0-aux1-gain;
+#X obj 459 384 s \$0-aux1-gain;
+#X obj 624 385 s \$0-aux2-gain;
+#X obj 778 386 s \$0-aux3-gain;
 #X connect 0 0 44 0;
 #X connect 0 0 42 0;
 #X connect 0 0 43 0;
@@ -337,9 +339,11 @@
 #X connect 42 0 26 0;
 #X connect 42 1 29 0;
 #X connect 42 2 0 0;
+#X connect 42 3 48 0;
 #X connect 43 0 25 0;
 #X connect 43 1 29 0;
 #X connect 43 2 0 0;
+#X connect 43 3 47 0;
 #X connect 44 0 24 0;
 #X connect 44 1 29 0;
 #X connect 44 2 0 0;
@@ -353,6 +357,8 @@
 #X obj 61 394 rescale -in -100 12 0 1;
 #X msg 435 87 0 \$1;
 #X obj 377 146 r \$0-aux1-gain;
+#X obj 491 325 r \$0-aux2-gain;
+#X obj 627 326 r \$0-aux3-gain;
 #X connect 0 0 34 0;
 #X connect 4 0 3 0;
 #X connect 4 0 47 0;
@@ -370,13 +376,10 @@
 #X connect 18 0 19 1;
 #X connect 19 0 12 0;
 #X connect 21 0 48 0;
-#X connect 25 0 39 2;
-#X connect 25 0 40 2;
 #X connect 29 0 36 1;
 #X connect 29 0 37 1;
 #X connect 30 0 39 1;
 #X connect 30 0 40 1;
-#X connect 31 0 38 2;
 #X connect 32 0 38 1;
 #X connect 33 0 34 1;
 #X connect 33 0 35 1;
@@ -406,4 +409,7 @@
 #X connect 54 0 51 0;
 #X connect 55 0 36 2;
 #X connect 55 0 37 2;
+#X connect 56 0 38 2;
+#X connect 57 0 39 2;
+#X connect 57 0 40 2;
 #X coords 0 -1 1 1 110 262 2 100 100;
