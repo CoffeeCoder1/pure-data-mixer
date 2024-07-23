@@ -1,4 +1,4 @@
-#N canvas 2 88 1173 462 12;
+#N canvas 2471 287 1173 462 12;
 #X obj 300 35 inlet~;
 #X obj 103 128 tgl 20 1 \$0-mute-s \$0-mute-r empty 0 -10 0 12 #ffffff #ff0400 #000000 1 1;
 #X obj 156 128 else/knob 20 -100 10 0 1 \$0-aux1-knob-s \$0-aux1-knob-r #dfdfdf #7c7c7c black 1 0 0 0 1 320 0 0 0.001;
@@ -10,9 +10,9 @@
 #X obj 435 35 inlet;
 #X obj 61 420 outlet;
 #X text 305 323 Main Out;
-#N canvas 581 377 1189 535 numbercruncher 1;
+#N canvas 2495 453 1189 535 numbercruncher 1;
 #X obj 87 10 inlet;
-#X obj 885 186 loadbang;
+#X obj 850 172 loadbang;
 #X obj 43 501 outlet;
 #X text 371 73 Sends creation argument list to the GOP;
 #X text 319 258 Receives GOP values and sends them on again to the saver;
@@ -52,7 +52,7 @@
 #X obj 187 140 s \$0-gain-r;
 #X obj 186 197 r \$0-gain-s;
 #X msg 185 283 symbol gain;
-#X obj 885 211 t b b b b b b b;
+#X obj 850 197 t b b b b b b b;
 #X obj 87 44 unpack s f s f s f s f s f s f s f;
 #X obj 43 463 pack s f s f s f s f s f s f s f;
 #X connect 0 0 42 0;
@@ -125,11 +125,11 @@
 #X text 581 299 Aux Send 2;
 #X obj 582 395 throw~ bus-2-l;
 #X obj 688 395 throw~ bus-2-r;
-#X obj 156 104 tgl 20 1 \$0-aux1-mute-s \$0-aux1-mute-r empty 0 -10 0 12 #ffffff #ff0400 #000000 1 1;
+#X obj 156 104 tgl 20 1 \$0-aux1-mute-s \$0-aux1-mute-r empty 0 -10 0 12 #ffffff #ff0400 #000000 0 1;
 #X obj 180 104 tgl 20 1 \$0-aux3-mute-s \$0-aux3-mute-r empty 0 -10 0 12 #ffffff #ff0400 #000000 1 1;
 #X obj 132 128 else/knob 20 -100 10 0 1 \$0-aux2-knob-s \$0-aux2-knob-r #9c00ff #7c7c7c black 1 0 0 0 1 320 0 0 0.01;
-#X obj 132 104 tgl 20 1 \$0-aux2-mute-s \$0-aux2-mute-r empty 0 -10 0 12 #ffffff #ff0400 #000000 1 1;
-#X obj 103 104 tgl 20 1 \$0-master-mute-s \$0-master-mute-r empty 0 -10 0 12 #ff0400 #000000 #000000 1 1;
+#X obj 132 104 tgl 20 1 \$0-aux2-mute-s \$0-aux2-mute-r empty 0 -10 0 12 #ffffff #ff0400 #000000 0 1;
+#X obj 103 104 tgl 20 1 \$0-master-mute-s \$0-master-mute-r empty 0 -10 0 12 #ff0400 #000000 #000000 0 1;
 #X obj 298 110 fader-math;
 #X obj 384 110 fader-math;
 #X obj 294 177 fader-math;
@@ -221,7 +221,7 @@
 #X obj 43 97 knob 50 0 20 0 0 \$0-gain-knob-s \$0-gain-knob-r #dfdfdf #7c7c7c black 1 0 0 0 1 320 0 0 0;
 #X text 43 77 Gain;
 #X text 488 299 Aux Send 1;
-#N canvas 121 207 1526 733 sof-fader 1;
+#N canvas 1989 487 1526 733 sof-fader 0;
 #X obj 100 102 vsl 20 200 -100 12 0 0 empty empty empty 0 -9 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 123 26 inlet;
 #X obj 109 455 outlet;
@@ -276,6 +276,7 @@
 #X obj 441 267 r \$0-aux1-r;
 #X obj 601 267 r \$0-aux2-r;
 #X obj 767 270 r \$0-aux3-r;
+#X obj 312 239 r \$0-gain-r;
 #X connect 0 0 35 0;
 #X connect 0 0 33 0;
 #X connect 0 0 34 0;
@@ -337,6 +338,7 @@
 #X connect 51 0 35 2;
 #X connect 52 0 34 2;
 #X connect 53 0 33 2;
+#X connect 54 0 18 0;
 #X coords 0 -1 1 1 20 205 2 100 100;
 #X restore 103 152 pd sof-fader;
 #X obj 435 62 rescale -in 0 1 -100 12;

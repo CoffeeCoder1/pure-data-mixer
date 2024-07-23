@@ -1,4 +1,4 @@
-#N canvas 1237 412 450 300 12;
+#N canvas 1238 440 450 300 12;
 #X obj 9 93 spigot 0;
 #X floatatom 62 150 5 0 0 0 - - - 0;
 #X obj 110 92 t b;
@@ -16,7 +16,7 @@
 #X obj 175 203 outlet;
 #X floatatom 175 176 5 0 0 0 - - - 0;
 #X text 8 3 From fader;
-#X text 62 3 SOF select;
+#X text 57 17 SOF select;
 #X text 112 2 From send knob;
 #X text 156 18 External Input;
 #X connect 0 0 3 0;
