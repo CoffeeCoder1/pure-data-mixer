@@ -1,4 +1,4 @@
-#N canvas 2475 399 1173 462 12;
+#N canvas 2476 427 1173 462 12;
 #X obj 300 35 inlet~;
 #X obj 103 128 tgl 20 1 \$0-mute-s \$0-mute-r empty 0 -10 0 12 #ffffff #ff0400 #000000 1 1;
 #X obj 156 128 else/knob 20 -100 10 0 1 \$0-aux1-knob-s \$0-aux1-knob-r #dfdfdf #7c7c7c black 1 0 0 0 1 320 0 0 0.001;
@@ -221,7 +221,7 @@
 #X obj 43 97 knob 50 0 20 0 0 \$0-gain-knob-s \$0-gain-knob-r #dfdfdf #7c7c7c black 1 0 0 0 1 320 0 0 0;
 #X text 43 77 Gain;
 #X text 488 299 Aux Send 1;
-#N canvas 1975 315 1526 733 sof-fader 1;
+#N canvas 1976 315 1526 733 sof-fader 1;
 #X obj 100 102 vsl 20 200 -100 12 0 0 empty empty empty 0 -9 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 123 26 inlet;
 #X obj 109 455 outlet;

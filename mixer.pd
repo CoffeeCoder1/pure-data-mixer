@@ -59,7 +59,7 @@
 #X obj 607 738 catch~ bus-2-l;
 #X obj 674 765 catch~ bus-2-r;
 #X obj 811 98 declare -lib zexy;
-#X obj 13 44 abstractions/channel-strip-stereo master-mute 0 gain 3.9196 aux1 0 aux1-mute 0 aux2 0 aux2-mute 0 channel-num 1;
+#X obj 13 44 abstractions/channel-strip-stereo master-mute 0 gain 6.52679 aux1 -7.94 aux1-mute 0 aux2 0 aux2-mute 0 channel-num 1;
 #X obj 132 44 abstractions/channel-strip-stereo master-mute 0 gain 0 aux1 0 aux1-mute 1 aux2 0 aux2-mute 1 channel-num 2;
 #X obj 251 44 abstractions/channel-strip-stereo master-mute 0 gain 0 aux1 0 aux1-mute 0 aux2 0 aux2-mute 1 channel-num 3;
 #X obj 366 44 abstractions/channel-strip-stereo master-mute 1 gain 0 aux1 0 aux1-mute 0 aux2 0 aux2-mute 0 channel-num 4;
@@ -70,7 +70,7 @@
 #X obj 97 532 abstractions/vu-meter;
 #X obj 795 625 abstractions/vu-meter;
 #X obj 851 625 abstractions/vu-meter;
-#X obj 724 43 vradio 20 1 1 4 sof-select-s sof-select-r SOF 0 -10 0 12 #fcfcfc #000000 #000000 0;
+#X obj 724 43 vradio 20 1 1 4 sof-select-s sof-select-r SOF 0 -10 0 12 #fcfcfc #000000 #000000 3;
 #X text 747 42 Gain;
 #X text 748 63 Main;
 #X text 748 83 Sub;
