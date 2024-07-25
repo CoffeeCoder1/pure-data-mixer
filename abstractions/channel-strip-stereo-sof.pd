@@ -1,4 +1,4 @@
-#N canvas 2526 307 1173 462 12;
+#N canvas 3876 400 1173 462 12;
 #X obj 300 35 inlet~;
 #X obj 103 128 tgl 20 1 \$0-mute-button-s \$0-mute-button-r empty 0 -10 0 12 #ffffff #ff0400 #000000 0 1;
 #X obj 156 128 else/knob 20 -100 10 0 1 \$0-aux1-knob-s \$0-aux1-knob-r #dfdfdf #7c7c7c black 1 0 0 0 1 320 0 0 0.001;
@@ -290,6 +290,7 @@
 #X obj 713 458 r \$0-aux3-mute-button-s;
 #X obj 712 568 s \$0-aux3-mute-button-r;
 #X obj 712 513 sof-logic;
+#X text 228 145 Sends triggers to the SOF logic to update the controls when a different send is selected.;
 #X connect 0 0 24 0;
 #X connect 0 0 22 0;
 #X connect 0 0 23 0;
@@ -314,9 +315,13 @@
 #X connect 11 2 23 3;
 #X connect 11 3 22 3;
 #X connect 12 0 25 3;
+#X connect 12 0 52 3;
 #X connect 12 1 24 3;
+#X connect 12 1 57 3;
 #X connect 12 2 23 3;
+#X connect 12 2 62 3;
 #X connect 12 3 22 3;
+#X connect 12 3 67 3;
 #X connect 13 0 23 1;
 #X connect 13 0 62 1;
 #X connect 14 0 22 1;
