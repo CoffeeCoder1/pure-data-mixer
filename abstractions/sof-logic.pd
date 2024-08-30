@@ -1,4 +1,4 @@
-#N canvas 221 201 414 327 12;
+#N canvas 371 238 414 327 12;
 #X obj 9 93 spigot 0;
 #X floatatom 109 151 5 0 0 0 - - - 0;
 #X obj 110 92 t b;
@@ -25,9 +25,9 @@
 #X text 40 227 Fader Position Output;
 #X text 6 193 To Send Knob;
 #X text 217 242 External Output;
-#X obj 9 122 change;
-#X connect 0 0 3 0;
+#X obj 9 122 route bang;
 #X connect 0 0 15 0;
+#X connect 0 0 3 0;
 #X connect 0 0 26 0;
 #X connect 1 0 22 0;
 #X connect 2 0 0 0;
@@ -45,6 +45,6 @@
 #X connect 13 0 11 0;
 #X connect 15 0 14 0;
 #X connect 20 0 3 0;
-#X connect 22 0 7 0;
 #X connect 22 0 9 0;
-#X connect 26 0 13 0;
+#X connect 22 0 7 0;
+#X connect 26 1 13 0;
