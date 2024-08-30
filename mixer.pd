@@ -1,4 +1,4 @@
-#N canvas 3840 208 1600 842 12;
+#N canvas 320 208 1600 842 12;
 #X declare -lib zexy;
 #X obj 14 801 dac~ 1 2 3;
 #X obj 15 768 *~;
@@ -58,14 +58,14 @@
 #X obj 811 98 declare -lib zexy;
 #X obj 13 44 abstractions/channel-strip-stereo master-mute 0 gain 11.4679 aux1 -14.77 aux1-mute 0 aux2 0 aux2-mute 0 channel-num 1;
 #X obj 132 44 abstractions/channel-strip-stereo master-mute 0 gain 0 aux1 0 aux1-mute 0 aux2 0 aux2-mute 1 channel-num 2;
-#X obj 251 44 abstractions/channel-strip-stereo master-mute 0 gain 11.4573 aux1 -12.02 aux1-mute 0 aux2 0 aux2-mute 0 channel-num 3;
+#X obj 251 44 abstractions/channel-strip-stereo master-mute 0 gain 11.4573 aux1 -39.7789 aux1-mute 0 aux2 0 aux2-mute 0 channel-num 3;
 #X obj 366 44 abstractions/channel-strip-stereo master-mute 0 gain 11.3696 aux1 -13.2877 aux1-mute 0 aux2 0 aux2-mute 1 channel-num 4;
 #X obj 485 44 abstractions/channel-strip-stereo master-mute 1 gain 0 aux1 0 aux1-mute 0 aux2 0 aux2-mute 1 channel-num 5;
 #X obj 602 44 abstractions/channel-strip-stereo master-mute -100 gain 0 aux1 0 aux1-mute 0 aux2 0 aux2-mute 0 channel-num 6;
 #X obj 161 523 abstractions/crossover fader 0.37 frequency 34.568 q 1.30178;
 #X obj 40 533 abstractions/vu-meter;
 #X obj 97 532 abstractions/vu-meter;
-#X obj 724 43 vradio 20 1 1 4 sof-select-s sof-select-r SOF 0 -10 0 12 #fcfcfc #000000 #000000 3;
+#X obj 724 43 vradio 20 1 1 4 sof-select-s sof-select-r SOF 0 -10 0 12 #fcfcfc #000000 #000000 1;
 #X text 747 42 Gain;
 #X text 748 63 Main;
 #X text 748 83 Sub;
