@@ -129,7 +129,7 @@
 #X obj 180 104 tgl 20 1 \$0-aux3-mute-button-s \$0-aux3-mute-button-r empty 0 -10 0 12 #ffffff #ff0400 #000000 1 1;
 #X obj 132 128 else/knob 20 -100 10 0.34 0 \$0-aux2-knob-s \$0-aux2-knob-r #9c00ff #7c7c7c black 1 0 0 0 1 320 0 0 0.01;
 #X obj 132 104 tgl 20 1 \$0-aux2-mute-button-s \$0-aux2-mute-button-r empty 0 -10 0 12 #ffffff #ff0400 #000000 0 1;
-#X obj 103 104 tgl 20 1 \$0-master-mute-button-s \$0-master-mute-button-r empty 0 -10 0 12 #ff0400 #000000 #000000 0 1;
+#X obj 103 104 tgl 20 1 \$0-master-mute-button-s \$0-master-mute-button-r empty 0 -10 0 12 #ff0400 #000000 #000000 -100 1;
 #X obj 298 110 fader-math;
 #X obj 384 110 fader-math;
 #X obj 294 177 fader-math;
@@ -409,7 +409,6 @@
 #X obj 479 300 r \$0-aux2-mute-s;
 #X obj 227 146 r \$0-aux1-mute-s;
 #X obj 628 303 r \$0-aux3-mute-s;
-#X obj 247 83 print;
 #X connect 0 0 34 0;
 #X connect 4 0 3 0;
 #X connect 4 0 47 0;
@@ -456,10 +455,8 @@
 #X connect 57 0 40 2;
 #X connect 58 0 34 2;
 #X connect 58 0 35 2;
-#X connect 58 0 63 0;
 #X connect 59 0 34 1;
 #X connect 59 0 35 1;
-#X connect 59 0 63 0;
 #X connect 60 0 38 1;
 #X connect 61 0 36 1;
 #X connect 61 0 37 1;
