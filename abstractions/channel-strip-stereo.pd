@@ -409,6 +409,7 @@
 #X obj 479 300 r \$0-aux2-mute-s;
 #X obj 227 146 r \$0-aux1-mute-s;
 #X obj 628 303 r \$0-aux3-mute-s;
+#X obj 247 83 print;
 #X connect 0 0 34 0;
 #X connect 4 0 3 0;
 #X connect 4 0 47 0;
@@ -455,8 +456,10 @@
 #X connect 57 0 40 2;
 #X connect 58 0 34 2;
 #X connect 58 0 35 2;
+#X connect 58 0 63 0;
 #X connect 59 0 34 1;
 #X connect 59 0 35 1;
+#X connect 59 0 63 0;
 #X connect 60 0 38 1;
 #X connect 61 0 36 1;
 #X connect 61 0 37 1;
