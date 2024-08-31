@@ -1,7 +1,7 @@
 #N canvas 572 418 1173 462 12;
 #X obj 300 35 inlet~;
 #X obj 103 128 tgl 20 1 \$0-mute-button-s \$0-mute-button-r empty 0 -10 0 12 #ffffff #ff0400 #000000 0 1;
-#X obj 156 128 else/knob 20 -100 10 0.34 1 \$0-aux1-knob-s \$0-aux1-knob-r #dfdfdf #7c7c7c black 1 0 0 0 1 320 0 0 0.001;
+#X obj 156 128 else/knob 20 -100 10 0.34 0 \$0-aux1-knob-s \$0-aux1-knob-r #dfdfdf #7c7c7c black 1 0 0 0 1 320 0 0 0.001;
 #X obj 132 154 vu 20 200 empty empty -1 -10 0 12 #404040 #000000 0 0;
 #X obj 484 176 vu-calc;
 #X obj 156 154 vu 20 200 empty empty -1 -10 0 12 #404040 #000000 1 0;
@@ -121,13 +121,13 @@
 #X obj 298 348 throw~ bus-l;
 #X obj 390 348 throw~ bus-r;
 #X obj 489 395 throw~ bus-1;
-#X obj 180 128 else/knob 20 -100 10 0.34 1 \$0-aux3-knob-s \$0-aux3-knob-r #ff8300 #7c7c7c black 1 0 0 0 1 320 0 0 0.01;
+#X obj 180 128 else/knob 20 -100 10 0.34 0 \$0-aux3-knob-s \$0-aux3-knob-r #ff8300 #7c7c7c black 1 0 0 0 1 320 0 0 0.01;
 #X text 601 275 Aux Send 2;
 #X obj 582 395 throw~ bus-2-l;
 #X obj 688 395 throw~ bus-2-r;
 #X obj 156 104 tgl 20 1 \$0-aux1-mute-button-s \$0-aux1-mute-button-r empty 0 -10 0 12 #ffffff #ff0400 #000000 0 1;
 #X obj 180 104 tgl 20 1 \$0-aux3-mute-button-s \$0-aux3-mute-button-r empty 0 -10 0 12 #ffffff #ff0400 #000000 1 1;
-#X obj 132 128 else/knob 20 -100 10 0.34 1 \$0-aux2-knob-s \$0-aux2-knob-r #9c00ff #7c7c7c black 1 0 0 0 1 320 0 0 0.01;
+#X obj 132 128 else/knob 20 -100 10 0.34 0 \$0-aux2-knob-s \$0-aux2-knob-r #9c00ff #7c7c7c black 1 0 0 0 1 320 0 0 0.01;
 #X obj 132 104 tgl 20 1 \$0-aux2-mute-button-s \$0-aux2-mute-button-r empty 0 -10 0 12 #ffffff #ff0400 #000000 0 1;
 #X obj 103 104 tgl 20 1 \$0-master-mute-button-s \$0-master-mute-button-r empty 0 -10 0 12 #ff0400 #000000 #000000 0 1;
 #X obj 298 110 fader-math;
