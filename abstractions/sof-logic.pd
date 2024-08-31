@@ -1,4 +1,4 @@
-#N canvas 123 748 414 327 12;
+#N canvas 232 452 687 604 12;
 #X obj 9 93 spigot 0;
 #X floatatom 109 151 5 0 0 0 - - - 0;
 #X obj 110 92 t b;
@@ -49,7 +49,7 @@
 #X connect 13 0 11 0;
 #X connect 15 0 14 0;
 #X connect 20 0 3 0;
-#X connect 22 0 9 0;
 #X connect 22 0 7 0;
+#X connect 22 0 9 0;
 #X connect 26 1 13 0;
 #X connect 27 0 0 0;
