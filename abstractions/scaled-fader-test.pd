@@ -1,0 +1,8 @@
+#N canvas 236 303 450 300 12;
+#X obj 27 41 scaled-fader;
+#X msg 27 12 set 0;
+#X msg 84 12 0;
+#X obj 27 254 print;
+#X connect 0 0 3 0;
+#X connect 1 0 0 0;
+#X connect 2 0 0 0;
