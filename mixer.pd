@@ -56,7 +56,7 @@
 #X obj 744 509 catch~ bus-2-l;
 #X obj 868 509 catch~ bus-2-r;
 #X obj 807 104 declare -lib zexy;
-#X obj 9 50 abstractions/channel-strip-stereo master-mute 0 gain 3.61809 aux1 1.86935 aux1-mute 0 aux2 2.98023e-06 aux2-mute 0 channel-num 1;
+#X obj 9 50 abstractions/channel-strip-stereo master-mute 0 gain 1.4 aux1 3.23618 aux1-mute 0 aux2 2.98023e-06 aux2-mute 0 channel-num 1;
 #X obj 128 50 abstractions/channel-strip-stereo master-mute 0 gain 0 aux1 -9.94975 aux1-mute 0 aux2 0 aux2-mute 1 channel-num 2;
 #X obj 247 50 abstractions/channel-strip-stereo master-mute 0 gain 11.4573 aux1 -39.7789 aux1-mute 0 aux2 0 aux2-mute 0 channel-num 3;
 #X obj 362 50 abstractions/channel-strip-stereo master-mute 0 gain 11.3696 aux1 -13.3266 aux1-mute 0 aux2 0 aux2-mute 1 channel-num 4;

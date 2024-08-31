@@ -1,4 +1,4 @@
-#N canvas 236 303 450 300 12;
+#N canvas 683 458 450 300 12;
 #X obj 27 41 scaled-fader;
 #X msg 27 12 set 0;
 #X msg 84 12 0;
