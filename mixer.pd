@@ -1,4 +1,4 @@
-#N canvas 302 406 1600 799 12;
+#N canvas 99 373 1600 799 12;
 #X declare -lib zexy;
 #X obj 8 771 dac~ 1 2 3;
 #X obj 10 11 adc~ 1 2;
@@ -53,9 +53,9 @@
 #X obj 459 470 catch~ bus-2-l;
 #X obj 459 494 catch~ bus-2-r;
 #X obj 807 104 declare -lib zexy;
-#X obj 9 50 abstractions/channel-strip-stereo master-mute 0 gain 1.4 aux1 5.08032 aux1-mute 0 aux2 2.98023e-06 aux2-mute 0 channel-num 1;
+#X obj 9 50 abstractions/channel-strip-stereo master-mute 0 gain 1.4 aux1 1.09108 aux1-mute 0 aux2 2.98023e-06 aux2-mute 0 channel-num 1;
 #X obj 128 50 abstractions/channel-strip-stereo master-mute 0 gain 0 aux1 -9.94975 aux1-mute 0 aux2 0 aux2-mute 1 channel-num 2;
-#X obj 247 50 abstractions/channel-strip-stereo master-mute 0 gain 11.4573 aux1 -39.7789 aux1-mute 0 aux2 0 aux2-mute 0 channel-num 3;
+#X obj 247 50 abstractions/channel-strip-stereo master-mute 0 gain 11.4573 aux1 -36.3581 aux1-mute 0 aux2 0 aux2-mute 0 channel-num 3;
 #X obj 362 50 abstractions/channel-strip-stereo master-mute 0 gain 11.3696 aux1 -13.3266 aux1-mute 0 aux2 0 aux2-mute 1 channel-num 4;
 #X obj 481 50 abstractions/channel-strip-stereo master-mute 1 gain 0 aux1 0 aux1-mute 0 aux2 0 aux2-mute 1 channel-num 5;
 #X obj 598 50 abstractions/channel-strip-stereo master-mute -100 gain 0 aux1 0 aux1-mute 0 aux2 0 aux2-mute 0 channel-num 6;
