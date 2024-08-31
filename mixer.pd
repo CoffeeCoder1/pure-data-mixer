@@ -70,7 +70,7 @@
 #X text 744 69 Main;
 #X text 744 89 Sub;
 #X text 744 110 Aux 1;
-#X obj 743 539 abstractions/bus-stereo;
+#X obj 743 539 abstractions/bus-stereo mute 0 fader -9.94975;
 #X obj 531 633 receive osc-send;
 #X connect 1 0 38 0;
 #X connect 1 0 0 0;
