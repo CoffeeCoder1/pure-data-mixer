@@ -1,13 +1,13 @@
-#N canvas 722 446 696 538 12;
+#N canvas 724 331 836 538 12;
 #X obj 21 207 *~;
-#X obj 105 118 vsl 20 200 0 1 0 1 \$0-fader-s \$0-fader-r Level 0 -9 0 12 #fcfcfc #000000 #000000 7363 1;
-#X obj 191 120 hsl 170 20 0 127 0 1 \$0-frequency-s \$0-frequency-r Frequency -2 -10 0 12 #fcfcfc #000000 #000000 4600 1;
+#X obj 105 118 vsl 20 200 0 1 0 1 \$0-fader-s \$0-fader-r Level 0 -9 0 12 #fcfcfc #000000 #000000 19900 1;
+#X obj 191 120 hsl 170 20 0 127 0 1 \$0-frequency-s \$0-frequency-r Frequency -2 -10 0 12 #fcfcfc #000000 #000000 5100 1;
 #X obj 198 72 mtof;
 #X floatatom 368 121 5 0 0 0 - - - 0;
 #X obj 129 116 vu-meter;
 #X obj 17 16 inlet~;
 #X obj 21 241 outlet~;
-#X obj 191 158 hsl 170 20 0 10 0 1 \$0-q-s \$0-q-r Q -2 -10 0 12 #fcfcfc #000000 #000000 2200 1;
+#X obj 191 158 hsl 170 20 0 10 0 1 \$0-q-s \$0-q-r Q -2 -10 0 12 #fcfcfc #000000 #000000 1700 1;
 #N canvas 944 459 645 393 numbercruncher 0;
 #X obj 87 10 inlet;
 #X obj 269 255 loadbang;
@@ -77,6 +77,12 @@
 #X obj 32 148 pack 0 50;
 #X obj 32 173 line~;
 #X obj 16 48 iemlib/lp2~;
+#X obj 599 17 inlet~;
+#X obj 689 17 inlet~;
+#X obj 600 49 iemlib/hp2~;
+#X obj 690 49 iemlib/hp2~;
+#X obj 601 83 outlet~;
+#X obj 691 83 outlet~;
 #X connect 0 0 5 0;
 #X connect 0 0 7 0;
 #X connect 1 0 21 0;
@@ -85,6 +91,8 @@
 #X connect 2 0 22 0;
 #X connect 3 0 4 0;
 #X connect 4 0 28 1;
+#X connect 4 0 31 1;
+#X connect 4 0 32 1;
 #X connect 6 0 28 0;
 #X connect 8 0 19 0;
 #X connect 8 0 23 0;
@@ -98,6 +106,8 @@
 #X connect 16 0 17 1;
 #X connect 17 0 10 0;
 #X connect 19 0 28 2;
+#X connect 19 0 31 2;
+#X connect 19 0 32 2;
 #X connect 21 0 20 0;
 #X connect 22 0 20 0;
 #X connect 23 0 20 0;
@@ -108,4 +118,8 @@
 #X connect 26 0 27 0;
 #X connect 27 0 0 1;
 #X connect 28 0 0 0;
+#X connect 29 0 31 0;
+#X connect 30 0 32 0;
+#X connect 31 0 33 0;
+#X connect 32 0 34 0;
 #X coords 0 -1 1 1 310 225 2 100 100;
