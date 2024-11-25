@@ -1,5 +1,5 @@
 {
-  "version": "1.26.2",
+  "version": "1.27.1",
   "createdWith": "Open Stage Control",
   "type": "fragment",
   "content": {
@@ -72,18 +72,19 @@
         "padding": "auto",
         "html": "",
         "css": "",
-        "value": "",
+        "value": "@{parent.variables.label}",
         "default": "",
         "linkId": "",
-        "address": "/strip/name",
-        "preArgs": "@{parent.preArgs}",
+        "address": "auto",
+        "preArgs": "",
         "decimals": 2,
         "target": "",
         "onCreate": "",
         "onValue": "",
         "vertical": false,
         "wrap": false,
-        "align": "center"
+        "align": "center",
+        "bypass": false
       },
       {
         "type": "fader",

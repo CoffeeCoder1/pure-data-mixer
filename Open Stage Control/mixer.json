@@ -1,6 +1,6 @@
 {
   "createdWith": "Open Stage Control",
-  "version": "1.26.2",
+  "version": "1.27.1",
   "type": "session",
   "content": {
     "type": "root",
@@ -200,7 +200,10 @@
         "file": "Fragments/Channel Strip.json",
         "fallback": "",
         "props": {
-          "preArgs": "[1]"
+          "preArgs": "[1]",
+          "variables": {
+            "label": "General"
+          }
         },
         "address": "auto",
         "variables": "@{parent.variables}"
@@ -221,7 +224,10 @@
         "file": "Fragments/Channel Strip.json",
         "fallback": "",
         "props": {
-          "preArgs": "[2]"
+          "preArgs": "[2]",
+          "variables": {
+            "label": "Interface"
+          }
         },
         "address": "auto",
         "variables": "@{parent.variables}"
@@ -242,7 +248,10 @@
         "file": "Fragments/Channel Strip.json",
         "fallback": "",
         "props": {
-          "preArgs": "[3]"
+          "preArgs": "[3]",
+          "variables": {
+            "label": "Music"
+          }
         },
         "address": "auto",
         "variables": "@{parent.variables}"
@@ -263,7 +272,10 @@
         "file": "Fragments/Channel Strip.json",
         "fallback": "",
         "props": {
-          "preArgs": "[4]"
+          "preArgs": "[4]",
+          "variables": {
+            "label": "Game"
+          }
         },
         "address": "auto",
         "variables": "@{parent.variables}"
@@ -597,7 +609,8 @@
             "decimals": 2,
             "target": "",
             "onCreate": "",
-            "onValue": ""
+            "onValue": "",
+            "bypass": false
           },
           {
             "type": "text",
@@ -633,7 +646,8 @@
             "decimals": 2,
             "target": "",
             "onCreate": "",
-            "onValue": ""
+            "onValue": "",
+            "bypass": false
           }
         ],
         "tabs": []
