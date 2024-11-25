@@ -296,7 +296,10 @@
         "file": "Fragments/Channel Strip.json",
         "fallback": "",
         "props": {
-          "preArgs": "[5]"
+          "preArgs": "[5]",
+          "variables": {
+            "label": "Microphone"
+          }
         },
         "address": "auto",
         "variables": "@{parent.variables}"
