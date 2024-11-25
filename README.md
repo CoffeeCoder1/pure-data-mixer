@@ -4,9 +4,11 @@ A stereo mixer built in Pure Data, and the abstractions needed to make your own.
 
 ## Dependencies
 
-iemlib
-else
-mrpeach
+* iemlib
+* else
+* mrpeach
+* iemguts
+* zexy
 
 ## Installation
 
