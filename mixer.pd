@@ -36,11 +36,11 @@
 #X obj 459 440 catch~ bus-2-l;
 #X obj 459 464 catch~ bus-2-r;
 #X obj 579 647 declare -lib zexy;
-#X obj 9 50 abstractions/channel-strip-stereo master-mute 0 gain 0 aux1 -28.67 aux1-mute 0 aux2 6.93786e-07 aux2-mute 0 channel-num 1;
+#X obj 9 50 abstractions/channel-strip-stereo master-mute 0 gain 0 aux1 -20.63 aux1-mute 0 aux2 6.93786e-07 aux2-mute 0 channel-num 1;
 #X obj 128 50 abstractions/channel-strip-stereo master-mute 0 gain 0.15748 aux1 -31.45 aux1-mute 0 aux2 0 aux2-mute 0 channel-num 2;
 #X obj 247 50 abstractions/channel-strip-stereo master-mute 1 gain 0 aux1 -100 aux1-mute 1 aux2 6.93786e-07 aux2-mute 0 channel-num 3;
 #X obj 362 50 abstractions/channel-strip-stereo master-mute 1 gain 0 aux1 -100 aux1-mute 1 aux2 6.93786e-07 aux2-mute 0 channel-num 4;
-#X obj 132 499 abstractions/crossover fader 1 frequency 38.3254 q 1.00592;
+#X obj 132 499 abstractions/crossover fader 1 frequency 40.6331 q 1.00592;
 #X obj 599 50 vradio 20 1 1 4 sof-select-s sof-select-r SOF 0 -10 0 12 #fcfcfc #000000 #000000 1;
 #X text 622 49 Gain;
 #X text 623 70 Main;
@@ -48,7 +48,7 @@
 #X text 623 111 Aux 1;
 #X obj 459 489 abstractions/bus-stereo mute 0 fader -95.13;
 #X obj 626 700 receive osc-send;
-#X obj 8 489 abstractions/bus-stereo mute 0 fader 0;
+#X obj 8 489 abstractions/bus-stereo mute 0 fader 6.93786e-07;
 #X text 43 493 Main;
 #X text 494 493 Aux 1;
 #X obj 459 734 dac~ 4 5;
