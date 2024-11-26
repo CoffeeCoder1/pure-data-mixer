@@ -1,4 +1,4 @@
-#N canvas 958 601 833 470 12;
+#N canvas 766 399 833 470 12;
 #X obj 221 53 fader-math;
 #X obj 220 28 inlet~;
 #X obj 301 28 inlet~;
@@ -60,6 +60,7 @@
 #X obj 104 128 scaled-fader;
 #X obj 104 347 s \$0-fader-s;
 #X obj 22 74 r \$0-fader-r;
+#X msg 104 28 0;
 #X connect 0 0 6 0;
 #X connect 0 0 8 0;
 #X connect 1 0 0 0;
@@ -85,4 +86,5 @@
 #X connect 23 0 21 0;
 #X connect 23 0 0 2;
 #X connect 23 0 5 2;
+#X connect 24 0 21 0;
 #X coords 0 -1 1 1 110 237 2 100 100;
