@@ -1,8 +1,13 @@
-#N canvas 683 458 450 300 12;
-#X obj 27 41 scaled-fader;
+#N canvas 548 450 450 300 12;
+#X obj 27 38 scaled-fader;
 #X msg 27 12 set 0;
 #X msg 84 12 0;
-#X obj 27 254 print;
-#X connect 0 0 3 0;
+#X obj 187 83 knob 50 0 127 0 0 empty empty #dfdfdf #7c7c7c black 1 0 0 0 1 320 0 0 0;
+#X obj 78 73 rmstodb;
+#X floatatom 78 99 5 0 0 0 - - - 0;
+#X floatatom 27 250 5 0 0 0 - - - 0;
+#X connect 0 0 4 0;
+#X connect 0 0 6 0;
 #X connect 1 0 0 0;
 #X connect 2 0 0 0;
+#X connect 4 0 5 0;
