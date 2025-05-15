@@ -1,4 +1,4 @@
-#N canvas 856 521 876 491 12;
+#N canvas 911 492 876 491 12;
 #X obj 100 102 vsl 20 200 0 1 0 0 empty empty empty 0 -9 0 12 #fcfcfc #000000 #000000 0 1;
 #X floatatom 69 44 5 0 0 0 - - - 0;
 #X obj 103 381 hsl 162 19 0 1 0 0 empty empty empty -2 -10 0 12 #fcfcfc #000000 #000000 0 1;
@@ -6,7 +6,7 @@
 #X obj 21 15 inlet;
 #X obj 17 406 outlet;
 #X msg 146 137 set \$1;
-#X obj 648 19 loadbang;
+#X obj 670 26 loadbang;
 #X floatatom 17 382 5 0 0 0 - - - 0;
 #X floatatom 148 281 5 0 0 0 - - - 0;
 #X obj 17 278 v \$0-out;
@@ -14,14 +14,16 @@
 #X text 177 85 Needed so values can be sent before loadbang;
 #X obj 69 15 route set bang;
 #X text 181 11 Takes in and outputs a range of [0 \, 1];
-#X msg 648 44 0.1;
-#X text 692 45 P constant;
-#X text 693 93 a value;
-#X floatatom 648 93 5 0 0 0 - - - 0;
-#X obj 648 69 expr pow((1-(1/$f1)) \, 2);
+#X msg 670 75 0.1;
+#X text 714 76 P constant;
+#X text 715 124 a value;
+#X floatatom 670 124 5 0 0 0 - - - 0;
+#X obj 670 100 expr pow((1-(1/$f1)) \, 2);
 #X obj 146 111 expr log(($f1*($f2-1))+1)/log($f2);
 #X obj 100 319 expr (pow($f2 \, $f1)-1)/($f2-1);
 #X obj 111 43 t b f;
+#X obj 670 51 t b b;
+#X text 737 24 Set up expression before attempting update;
 #X connect 0 0 9 0;
 #X connect 0 0 21 0;
 #X connect 1 0 10 0;
@@ -29,8 +31,7 @@
 #X connect 2 0 22 0;
 #X connect 4 0 13 0;
 #X connect 6 0 0 0;
-#X connect 7 0 11 0;
-#X connect 7 0 15 0;
+#X connect 7 0 23 0;
 #X connect 8 0 5 0;
 #X connect 8 0 3 0;
 #X connect 10 0 8 0;
@@ -47,4 +48,6 @@
 #X connect 21 0 10 0;
 #X connect 22 0 10 0;
 #X connect 22 1 1 0;
+#X connect 23 0 11 0;
+#X connect 23 1 15 0;
 #X coords 0 -1 1 1 20 205 2 100 100;
