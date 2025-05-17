@@ -8,7 +8,7 @@ A stereo mixer built in Pure Data, and the abstractions needed to make your own.
 
 * iemlib
 * else
-* mrpeach
+* osc
 * iemguts
 * zexy
 
