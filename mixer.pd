@@ -41,7 +41,7 @@
 #A saved label 71 101 110 101 114 97 108;
 #A saved mute 0;
 #A saved trim 0.999998;
-#A saved aux1-gain 0.596779;
+#A saved aux1-gain 0.0142928;
 #A saved aux1-mute 0;
 #A saved aux2-gain 0.854986;
 #A saved aux2-mute 0;
@@ -52,7 +52,7 @@
 #A saved label 73 110 116 101 114 102 97 99 101;
 #A saved mute 1;
 #A saved trim 0.15748;
-#A saved aux1-gain 0.281491;
+#A saved aux1-gain 0.203309;
 #A saved aux1-mute 0;
 #A saved aux2-gain 0.87491;
 #A saved aux2-mute 0;
@@ -74,9 +74,9 @@
 #A saved label 71 97 109 101 115;
 #A saved mute 1;
 #A saved trim 0;
-#A saved aux1-gain -100;
+#A saved aux1-gain 0;
 #A saved aux1-mute 1;
-#A saved aux2-gain 6.93786e-07;
+#A saved aux2-gain 6.94394e-07;
 #A saved aux2-mute 0;
 #A saved aux3-gain 0;
 #A saved aux3-mute 1;
@@ -112,13 +112,13 @@
 #X obj 480 37 abstractions/channel-strip-stereo master-mute 1 gain 0 aux1 -97.57 aux1-mute 1 aux2 6.93786e-07 aux2-mute 0 symbol 0;
 #A saved index 5;
 #A saved label 77 105 99 114 111 112 104 111 110 101;
-#A saved mute 1;
+#A saved mute 0;
 #A saved trim 0;
-#A saved aux1-gain -97.57;
+#A saved aux1-gain 0;
 #A saved aux1-mute 1;
-#A saved aux2-gain 6.93786e-07;
+#A saved aux2-gain 6.94394e-07;
 #A saved aux2-mute 1;
-#A saved aux3-gain 1;
+#A saved aux3-gain 0.245009;
 #A saved aux3-mute 0;
 #X obj 480 10 adc~ 9 10;
 #X obj 8 489 abstractions/bus-master-stereo;
